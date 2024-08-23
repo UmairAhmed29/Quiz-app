@@ -1,14 +1,16 @@
 .quiz-container {
-  width: 50%;
+  width: 60%;
   margin: auto;
-  text-align: center;
+  text-align: left;
+  
 }
 
 .question-category {
   font-size: 18px;
-  color: #666;
-  margin-bottom: 20px;
-  text-align: center;
+  color: #8f8383;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: normal;
 }
 
 .progress-container {
@@ -19,7 +21,7 @@
 
 .progress-bar {
   height: 10px;
-  background-color: #4caf50;
+  background-color: #000000;
 }
 
 .difficulty-stars {
@@ -48,12 +50,14 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: bold;
 }
 
 .answer-feedback {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
+  text-align: center;
 }
 
 .score-container {
@@ -79,5 +83,6 @@
 
 .score-text {
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: bold;
 }

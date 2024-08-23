@@ -73,16 +73,18 @@ function App() {
         <div className="progress-bar" style={{ width: `${progress}%` }}></div>
       </div>
 
+      
+
+      <h1>Question {currentQuestion + 1} of {questions.length}</h1>
+      <p className="question-category">{decodeURIComponent(questions[currentQuestion].category)}</p>
       <div className="difficulty-stars">
         {stars.map((isBlack, index) => (
           <span key={index} className={isBlack ? 'star-black' : 'star-white'}>&#9733;</span>
         ))}
-      </div>
-
-      <h2>Question {currentQuestion + 1} of {questions.length}</h2>
-      <p className="question-category">{decodeURIComponent(questions[currentQuestion].category)}</p>
+      </div> 
+      <p>{decodeURIComponent(questions[currentQuestion].question)}</p>
+      
         
-
       <div className="options-grid">
         {[
           ...questions[currentQuestion].incorrect_answers.map((ans, idx) => ({ text: decodeURIComponent(ans), isCorrect: false, index: idx })),
