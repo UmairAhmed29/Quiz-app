@@ -82,7 +82,10 @@ function App() {
           <span key={index} className={isBlack ? 'star-black' : 'star-white'}>&#9733;</span>
         ))}
       </div> 
-      <p>{decodeURIComponent(questions[currentQuestion].question)}</p>
+      <p style={{ fontWeight: 'bold', fontSize: '24px' }}>{decodeURIComponent(questions[currentQuestion].question)}</p>
+
+     
+      
       
         
       <div className="options-grid">
