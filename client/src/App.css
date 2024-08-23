@@ -1,0 +1,83 @@
+.quiz-container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.question-category {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.progress-container {
+  height: 10px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #4caf50;
+}
+
+.difficulty-stars {
+  margin-bottom: 10px;
+}
+
+.star-black {
+  color: black;
+  font-size: 24px;
+}
+
+.star-white {
+  color: white;
+  font-size: 24px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.options-grid button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.answer-feedback {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.score-container {
+  margin-top: 20px;
+  position: relative;
+}
+
+.score-progress-bar-container {
+  height: 20px;
+  position: relative;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+
+.score-progress-bar, .max-score-progress-bar, .min-score-progress-bar {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.score-text {
+  margin-top: 5px;
+  font-size: 14px;
+}
